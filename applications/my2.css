@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.breadcrumb {
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #0078D7;
+}
+
+/* Applications Section */
+.applications-section {
+    margin: 20px;
+}
+
+.applications-section h2 {
+    background-color: #0078D7;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Application Card */
+.application-card {
+    background-color: #eaeaea;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.application-card h3 {
+    color: #0078D7;
+    margin: 0;
+    font-size: 20px;
+}
+
+.application-card p {
+    color: #333;
+    margin: 5px 0 15px;
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #0078D7;
+    width: 0; /* Will be dynamically set by inline style */
+    border-radius: 10px;
+}
+
+/* Progress Link */
+.progress-link {
+    text-decoration: none;
+    color: #0078D7;
+    font-weight: bold;
+}
+
+/* Progress Icon */
+.progress-icon {
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0078D7;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
