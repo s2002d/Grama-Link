@@ -1,0 +1,130 @@
+@import url("../citizen/partials/navbar.css");
+@import url("../citizen/partials/footer.css");
+@import url("../citizen/partials/mediaqueries.css");
+
+/* Page specific styles */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.gif_container {
+  margin-top: 10rem;
+  background-color: var(--background-color);
+}
+.appointment_container h2 {
+  margin-top: 6rem;
+  padding: 2rem 2rem;
+  margin-top: auto;
+}
+
+.appointment_container {
+  background-color: var(--light-gray);
+  /* flex: 1; */
+  width: 40rem;
+  border-radius: 10px;
+  box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+  justify-content: left;
+  align-items: left;
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+.form_container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.form_left {
+  flex: 1;
+}
+
+.form_left label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form_left input,
+.form_left select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form_right {
+  flex: 1;
+}
+
+.calender {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 20rem;
+}
+
+.calender_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 10px;
+  border-bottom: 1px solid;
+}
+
+.calender_header .day {
+  text-align: center;
+  font-size: 12px;
+}
+
+.calender_header .arrow {
+  font-size: 16px;
+  cursor: pointer;
+}
+.time_slots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.time_slots button {
+  text-align: left;
+  padding: 5px 10px;
+  background-color: var(--primary-light);
+  color: var(--white-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time_slots .more {
+  background-color: var(--dark-gray);
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button_container .cancel {
+  background-color: var(--accent-color);
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.button_container .book-now {
+  background-color: var(--green-color);
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}

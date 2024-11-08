@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Primary Theme Colors */
+:root {
+  --primary-color: #050097; /* Dark Blue - main color */
+  --primary-light: #4d59e7; /* Lighter shade of blue for hover effects */
+  --primary-dark: #03006a; /* Darker shade for buttons or highlights */
+
+  /* Neutral Colors */
+  --white-color: #ffffff; /* White - background, text on dark elements */
+  --light-gray: #f0f0f5; /* Very light gray - background or section */
+  --medium-gray: #e0e0e0; /* Gray for borders, secondary elements */
+  --dark-gray: #595959; /* Text on light backgrounds */
+  --light-gray: #e6e6e6;
+  --black-color: #000000; /* Black for text and dark elements */
+
+  /* Accent Colors */
+  --secondary-color: #f5a623; /* Orange - used for highlights, alerts */
+  --accent-color: #f75945; /* Red - for errors, warnings */
+  --green-color: #42c46f; /* Green - for success messages, validation */
+
+  /* Hover & Interactive States */
+  --button-hover: #3b4bdc; /* Hover effect for buttons */
+  --link-hover: #303f9f; /* Hover effect for links */
+
+  /* Background Colors */
+  --background-color: #f9fafd; /* Overall page background */
+  --footer-background: #050097; /* Footer color (dark blue) */
+
+  /* Text Colors */
+  --text-primary: #050097; /* Dark blue for headings */
+  --text-secondary: #333333; /* Dark gray for body text */
+  --text-light: #ffffff; /* White for text on dark backgrounds */
+
+  --header-background: #137dc5;
+
+  --container-width-lg: 76%; /* for large devices */
+  --container-width-md: 85%; /* for medium devices */
+  --container-width-sm: 95%; /* for small devices */
+
+  --transition: all 400ms ease;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: var(--black-color);
+  background: var(--background-color);
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--black-color);
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  display: inline-block;
+  background: var(--primary-dark);
+  color: var(--white-color);
+  padding: 0.3rem 0.6rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+button:hover {
+  background: var(--light-gray);
+  color: var(--black-color);
+  border-color: none;
+}
+
+/* Navbar Styles */
+
+nav {
+  background: var(--white-color);
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav__menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.nav__menu a:hover {
+  color: var(--primary-light);
+}
+
+.user-pic {
+  display: inline-block;
+  cursor: pointer;
+  width: 3rem;
+  border-radius: 50%;
+  right: 0;
+}
+
+.sub-menu {
+  position: fixed;
+  top: 5rem;
+  right: 5%;
+  height: fit-content;
+  width: 15rem;
+  flex-direction: column;
+  gap: 0;
+  background: var(--white-color);
+  z-index: 100;
+  padding-bottom: 1rem;
+  align-items: center;
+  display: none;
+}
+
+.sub-menu li {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sub-menu li a {
+  /* box-shadow: 0.2rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3); */
+  display: grid;
+  margin-left: 1rem;
+}
+
+.sub-menu li a:hover {
+  text-decoration: underline;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  width: 4rem;
+  padding: 0.5rem;
+}
+
+.user-info h4 {
+  margin-right: 1rem;
+}
+
+.user-info a:hover {
+  text-decoration: underline;
+}
+
+.sub-menu hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--medium-gray);
+}
+
+.logoutbutton {
+  display: inline-block;
+  background: var(--primary-dark);
+  color: var(--white-color);
+  padding: 0.6rem 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: var(--transition);
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 80%;
+  text-align: center;
+}
+
+.logoutbutton:hover {
+  background: transparent;
+  color: var(--black-color);
+  border: 1px solid var(--black-color);
+}
+
+/* Breadcrumb styles */
+
+.breadcrumb {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+}
+
+.crumb:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,78 @@
+@import url("../citizen/partials/navbar.css");
+@import url("../citizen/partials/footer.css");
+@import url("../citizen/partials/mediaqueries.css");
+
+/* Header Section */
+.about-page {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.about__header {
+  margin-top: 5rem;
+  background-color: var(--light-background-color);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.header__container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header__container p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* About Section */
+/* .about__section {
+  padding: 50px 0;
+} */
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about__content {
+  padding: 20px;
+}
+
+.about__content h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.about__content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.team__container {
+  text-align: center;
+}
+
+.teammember {
+  display: inline-block;
+  width: 30%;
+  margin: 2rem 3rem 2rem 3rem;
+}
+
+.teammember img {
+  height: 15rem;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  vertical-align: bottom;
+  margin-bottom: 1rem;
+}

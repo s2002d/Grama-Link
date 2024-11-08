@@ -1,0 +1,71 @@
+@import url("../citizen/partials/navbar.css");
+@import url("../citizen/partials/footer.css");
+@import url("../citizen/partials/mediaqueries.css");
+
+.wrapper {
+  padding: 3rem 3rem 5rem 3rem;
+  background-color: #ffffff;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--black-color);
+  border-radius: 10px;
+}
+
+.complaints-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.new-complaint-button {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.apply-btn {
+  display: inline-block;
+  background-color: #050097;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #020074;
+}
+
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+    a{
+      color: #050097;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+}
+
+.complaints-table th,
+.complaints-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.complaints-table th {
+  background-color: #050097;
+  color: #fff;
+}
+
+.complaints-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--medium-gray);
+}
